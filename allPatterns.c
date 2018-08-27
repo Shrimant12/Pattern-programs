@@ -1,14 +1,15 @@
 #include"stdio.h"
 
 int square_pattern();
-
+int cross_pattern();
 int main()
 {	
 	int a,b;
 	
 	int square = square_pattern(a,b);	
-			
-return 0;
+	int cross = cross_pattern(a,b);		
+
+	return 0;
 }
 
 int square_pattern(int i,int j)
@@ -33,4 +34,24 @@ int square_pattern(int i,int j)
 
 }	
 
+int cross_pattern(int i, int j)
+{
+	printf("\n");
+	
+	for(i=0; i<5; i++)
+	{
+		for(j=0; j<5; j++)
+		{
+			if(i==j || i+j==4 )
+			{
+				printf("*");				
+			}
+			else
+			{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
 
+}
