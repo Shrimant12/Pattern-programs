@@ -2,13 +2,15 @@
 
 int square_pattern();
 int cross_pattern();
+int leftTri_pattern();
+
 int main()
 {	
 	int a,b;
 	
 	int square = square_pattern(a,b);	
 	int cross = cross_pattern(a,b);		
-
+	int leftTri = leftTri_pattern(a,b);
 	return 0;
 }
 
@@ -55,3 +57,33 @@ int cross_pattern(int i, int j)
 	}
 
 }
+
+int leftTri_pattern(int i, int j)
+{
+	for(i=0; i<5; i++)
+	{
+		for(j=0; j<5; j++)
+		{ 
+		int n;
+			if(i+j <= n-1)
+			{
+				printf("*");
+			}
+			else
+			{
+				printf(" ");
+			}
+		
+		}
+		printf("\n");
+	
+	}
+
+
+
+}
+
+
+
+
+
